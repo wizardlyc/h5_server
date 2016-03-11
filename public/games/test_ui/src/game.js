@@ -19,7 +19,33 @@ window.onload = function () {
   renderer.view.style.display = "block";
   renderer.autoResize = true;
   //renderer.resize(window.innerWidth, window.innerHeight);
+  PIXI.loader.add('cat_5','assets/cat_5.json').load(onAnimationLoaded);
 
+  stage.interactive = true;
+
+  function onAnimationLoaded(loader, res)
+  {
+    var cat_5 = new PIXI.spine.Spine(res.cat_5.spineData);
+
+    cat_5.position.x = renderer.width/2;
+    cat_5.position.y = renderer.height;
+
+    cat_5.scale.set(1.5);
+
+    cat_5.stateData.setMixByName('idle','upgrade', 0.2);
+    cat_5.stateData.setMixByName('upgrade','idle', 0.4);
+
+    cat_5.state.setAnimationByName(0, 'idle', true);
+
+    stage.addChild(cat_5);
+
+
+    stage.on('click', function(){
+      cat_5.state.setAnimationByName(0,'upgrade', false);
+      cat_5.state.addAnimationByName(0,'idle', true, 0);
+    });
+    onAssetsLoaded();
+  }
 
   var guiObj = {
     id: 'main',
@@ -121,5 +147,5 @@ window.onload = function () {
       renderer.render(stage);
     }
   }
-  onAssetsLoaded();
+  //onAssetsLoaded();
 }
