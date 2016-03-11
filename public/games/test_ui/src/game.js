@@ -1,6 +1,11 @@
 /**
  * Created by wizard on 16/3/7.
  */
+
+//var PIXI = require("pixi.js");
+//var EZGUI = require("./EZGUI.js");
+//console.log("PIXI",PIXI);
+//console.log("EZGUI",EZGUI);
 window.onload = function () {
   // create an new instance of a pixi stage
 
@@ -102,7 +107,7 @@ window.onload = function () {
   function onAssetsLoaded() {
     requestAnimationFrame(animate);
     //sprite.setTexture(texture2);
-    EZGUI.Theme.load(['games/test_ui/assets/ui/kenney-theme/kenney-theme.json'], function () {
+    EZGUI.Theme.load(['./assets/ui/kenney-theme/kenney-theme.json'], function () {
       guiContainer = EZGUI.create(guiObj, 'kenney');//new EZGUI.GUISprite(guiObj, guiTheme);
       //guiContainer.visible = false;
       EZGUI.components.btn1.on('click', function (event) {
