@@ -1,12 +1,12 @@
 var path = require('path');
 
-var project_name = "/test_ui";
+var project_name = "/FightPower";
 
 var entry_path = path.join(__dirname, "public", "games");
 module.exports = {
     //入口文件
     entry: {
-        test_ui:entry_path+project_name+"/src/game.js"
+        FightPower:entry_path+project_name+"/src/main.js"
     },
     output: {
         path: entry_path+project_name,
