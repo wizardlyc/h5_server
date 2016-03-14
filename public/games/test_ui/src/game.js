@@ -2,10 +2,6 @@
  * Created by wizard on 16/3/7.
  */
 
-//var PIXI = require("pixi.js");
-//var EZGUI = require("./EZGUI.js");
-//console.log("PIXI",PIXI);
-//console.log("EZGUI",EZGUI);
 window.onload = function () {
   // create an new instance of a pixi stage
 

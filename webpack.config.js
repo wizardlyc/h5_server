@@ -1,18 +1,16 @@
 var path = require('path');
 
+var project_name = "/test_ui";
+
 var entry_path = path.join(__dirname, "public", "games");
-var output_path = path.join(__dirname, "public", "games-bin");
 module.exports = {
     //入口文件
     entry: {
-        Test: path.join(entry_path, "test_ui", "src", "game.js")
-//        Rope: "./src/Rope.js",
-//        Layer: ["./src/Layer.js", "./src/Select.js"]
+        test_ui:entry_path+project_name+"/src/game.js"
     },
-    //
     output: {
-        path: output_path,
-        filename: "[name].js"
+        path: entry_path+project_name,
+        filename: "[name].all.js"
     },
     devtool: 'eval',
     module: {
@@ -35,7 +33,7 @@ module.exports = {
 
 //            { test: /\.less$/, loader: 'style-loader!css-loader!less-loader' }, // use ! to chain loaders
 //            { test: /\.css$/, loader: 'style-loader!css-loader' },
-            { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192' } // inline base64 URLs for <=8k images, direct URLs for the rest
+            {test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'} // inline base64 URLs for <=8k images, direct URLs for the rest
         ],
         postLoaders: [
             {
