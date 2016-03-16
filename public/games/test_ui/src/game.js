@@ -129,7 +129,7 @@ window.onload = function () {
   function onAssetsLoaded() {
     requestAnimationFrame(animate);
     //sprite.setTexture(texture2);
-    EZGUI.Theme.load(['./assets/ui/kenney-theme/kenney-theme.json'], function () {
+    EZGUI.Theme.load(['./assets/layers/image-gui-themes/image-gui-themes.json'], function () {
       guiContainer = EZGUI.create(guiObj, 'kenney');//new EZGUI.GUISprite(guiObj, guiTheme);
       //guiContainer.visible = false;
       EZGUI.components.btn1.on('click', function (event) {

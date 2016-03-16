@@ -326,19 +326,19 @@
 },
 "chk-blue-checkmark.png":
 {
-	"frame": {"x":2,"y":182,"w":22,"h":20},
+	"frame": {"x":2,"y":182,"w":23,"h":22},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":5,"y":6,"w":22,"h":20},
+	"spriteSourceSize": {"x":5,"y":5,"w":23,"h":22},
 	"sourceSize": {"w":32,"h":32},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "chk-grey-checkmark.png":
 {
-	"frame": {"x":26,"y":182,"w":22,"h":20},
+	"frame": {"x":27,"y":182,"w":23,"h":22},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":5,"y":6,"w":22,"h":20},
+	"spriteSourceSize": {"x":5,"y":5,"w":23,"h":22},
 	"sourceSize": {"w":32,"h":32},
 	"pivot": {"x":0.5,"y":0.5}
 },
@@ -371,7 +371,7 @@
 },
 "radio-blue-check.png":
 {
-	"frame": {"x":50,"y":182,"w":17,"h":17},
+	"frame": {"x":172,"y":172,"w":17,"h":17},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":17,"h":17},
@@ -380,7 +380,7 @@
 },
 "radio-grey-check.png":
 {
-	"frame": {"x":172,"y":172,"w":17,"h":17},
+	"frame": {"x":172,"y":191,"w":17,"h":17},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":17,"h":17},
@@ -446,8 +446,8 @@
 	"version": "1.0",
 	"image": "kenney-theme.png",
 	"format": "RGBA8888",
-	"size": {"w":206,"h":206},
+	"size": {"w":210,"h":210},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:3d1eafe7d450244434f87d13f6254631:56576cfe48019d00b965bab55a409e3a:46ff37ff059fea33467ab28616e0088c$"
+	"smartupdate": "$TexturePacker:SmartUpdate:f32a59f95e82df228b83a13e3a6ab337:56576cfe48019d00b965bab55a409e3a:46ff37ff059fea33467ab28616e0088c$"
 }
 }

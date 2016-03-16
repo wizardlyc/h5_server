@@ -3,8 +3,8 @@
  */
 let Conf = Conf || {};
 Conf.Canvas = {
-    width: 800,
-    height: 480
+    width: 480,
+    height: 754
 };
 
 module.exports = Conf;

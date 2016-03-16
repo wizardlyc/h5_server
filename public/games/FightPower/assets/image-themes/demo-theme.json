@@ -1,6 +1,6 @@
 {
     "__config__": {
-        "name": "kenney",
+        "name": "demo",
         "resources": [
             "./kenney-atlas.json",
             "../fonts/desyrel.fnt",

@@ -1,7 +1,7 @@
 /**
  * Created by guolei on 16/3/14.
  */
-
+var renderer = require();
 const BaseLayer = function (renderer) {
     let that = {};
     that.node = new PIXI.Container();

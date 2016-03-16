@@ -2,10 +2,10 @@
  * Created by guolei on 16/3/14.
  */
 const BaseLayer = require("./base-layer.js");
-//const image = require("../../assets/ui/img/bomb1.png");
+//const image = require("../../assets/layers/img/bomb1.png");
 const Inherited = require("./../inherited");
 const spine = require("pixi-spine");
-const uiJSON = require("../ui-json/game-scene-json");
+const uiJSON = require("./game-scene-json");
 
 const GameScene = function (renderer) {
     let that = Inherited(BaseLayer(renderer));
@@ -18,9 +18,9 @@ const GameScene = function (renderer) {
 
         //EZGUI
         let guiContainer = null;
-        EZGUI.Theme.load(['./assets/kenney-theme/kenney-theme.json'], function () {
+        EZGUI.Theme.load(['./assets/image-gui-themes/image-gui-themes.json'], function () {
             guiContainer = EZGUI.create(uiJSON, 'kenney');
-            that.node.addChildAt(guiContainer,0);
+            that.node.addChild(guiContainer);
         });
 
         //Tween
@@ -41,7 +41,7 @@ const GameScene = function (renderer) {
 
         //sprite
         PIXI.loader
-            .add('test', "./assets/ui/img/test.png")
+            .add('test', "./assets/layers/img/test.png")
             .load(function (loader, resources) {
                 sprite = new PIXI.Sprite(resources.test.texture);
                 that.node.addChild(sprite);

@@ -35,5 +35,5 @@ var Inherited = function (obj) {
     };
 
     return obj;
-}
+};
 module.exports = Inherited;
