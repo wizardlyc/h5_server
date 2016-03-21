@@ -20517,7 +20517,7 @@ Object.defineProperties(Texture.prototype, {
     /**
      * Indicates whether the texture is rotated inside the atlas
      * set to 2 to compensate for texture packer rotation
-     * set to 6 to compensate for spine packer rotation
+     * set to 6 to compensate for animations packer rotation
      * can be used to rotate or mirror sprites
      * See {@link PIXI.GroupD8} for explanation
      *

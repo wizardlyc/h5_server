@@ -1,0 +1,152 @@
+{
+  "level_0": {
+    "experience": 100,
+    "life": 100,
+    "attack": 5
+  },
+  "level_1": {
+    "experience": 110.00000000000001,
+    "life": 110,
+    "attack": 6
+  },
+  "level_2": {
+    "experience": 121.00000000000003,
+    "life": 120,
+    "attack": 7
+  },
+  "level_3": {
+    "experience": 133.10000000000005,
+    "life": 130,
+    "attack": 8
+  },
+  "level_4": {
+    "experience": 146.41000000000008,
+    "life": 140,
+    "attack": 9
+  },
+  "level_5": {
+    "experience": 161.0510000000001,
+    "life": 150,
+    "attack": 10
+  },
+  "level_6": {
+    "experience": 177.15610000000012,
+    "life": 160,
+    "attack": 11
+  },
+  "level_7": {
+    "experience": 194.87171000000015,
+    "life": 170,
+    "attack": 12
+  },
+  "level_8": {
+    "experience": 214.3588810000002,
+    "life": 180,
+    "attack": 13
+  },
+  "level_9": {
+    "experience": 235.79476910000022,
+    "life": 190,
+    "attack": 14
+  },
+  "level_10": {
+    "experience": 259.37424601000026,
+    "life": 210,
+    "attack": 15
+  },
+  "level_11": {
+    "experience": 285.3116706110003,
+    "life": 230,
+    "attack": 16
+  },
+  "level_12": {
+    "experience": 313.84283767210036,
+    "life": 250,
+    "attack": 17
+  },
+  "level_13": {
+    "experience": 345.2271214393104,
+    "life": 270,
+    "attack": 18
+  },
+  "level_14": {
+    "experience": 379.74983358324147,
+    "life": 290,
+    "attack": 19
+  },
+  "level_15": {
+    "experience": 417.7248169415656,
+    "life": 310,
+    "attack": 20
+  },
+  "level_16": {
+    "experience": 459.49729863572225,
+    "life": 330,
+    "attack": 21
+  },
+  "level_17": {
+    "experience": 505.4470284992945,
+    "life": 350,
+    "attack": 22
+  },
+  "level_18": {
+    "experience": 555.991731349224,
+    "life": 370,
+    "attack": 23
+  },
+  "level_19": {
+    "experience": 611.5909044841464,
+    "life": 390,
+    "attack": 24
+  },
+  "level_20": {
+    "experience": 672.7499949325611,
+    "life": 420,
+    "attack": 25
+  },
+  "level_21": {
+    "experience": 740.0249944258172,
+    "life": 450,
+    "attack": 26
+  },
+  "level_22": {
+    "experience": 814.027493868399,
+    "life": 480,
+    "attack": 27
+  },
+  "level_23": {
+    "experience": 895.430243255239,
+    "life": 510,
+    "attack": 28
+  },
+  "level_24": {
+    "experience": 984.973267580763,
+    "life": 540,
+    "attack": 29
+  },
+  "level_25": {
+    "experience": 1083.4705943388394,
+    "life": 570,
+    "attack": 30
+  },
+  "level_26": {
+    "experience": 1191.8176537727234,
+    "life": 600,
+    "attack": 31
+  },
+  "level_27": {
+    "experience": 1310.999419149996,
+    "life": 630,
+    "attack": 32
+  },
+  "level_28": {
+    "experience": 1442.0993610649957,
+    "life": 660,
+    "attack": 33
+  },
+  "level_29": {
+    "experience": 99999999,
+    "life": 690,
+    "attack": 34
+  }
+}

@@ -1,114 +1,68 @@
 /**
  * Created by guolei on 16/3/15.
  */
+
+const Conf = require("../tools/conf");
+
 const DemoLayer = {
     id: 'main',
     component: 'Window',
-    header: {id: 'ttl', skin: 'blueheader', position: {x: 0, y: 0}, height: 40, text: 'Title'},
-    draggable: true,
     padding: 4,
     position: {x: 0, y: 0},
-    width: 600,
-    height: 550,
+    width: Conf.Canvas.width,
+    height: Conf.Canvas.height,
     layout: [1, 3],
     children: [
+        null,
+        null,
         {
             component: 'Layout',
             position: {x: 0, y: 0},
-            width: 500,
+            width: Conf.Canvas.width - 8,
             height: 150,
-            layout: [2, 1],
+            layout: [3, 1],
             children: [
                 {
                     id: 'btn1',
-                    text: 'btn',
+                    text: 'btn1',
                     font: {
-                        size: '42px',
+                        size: '30px',
                         family: 'Skranji',
-                        color: 'red'
+                        color: 'white'
                     },
                     component: 'Button',
-                    skin: 'bluebutton',
+                    //image:{ "default": "./assets/img/bomb1.png", "down": "./assets/img/bomb1-selected.png" },
                     position: 'center',
-                    width: 190,
-                    height: 80
+                    width: 80,
+                    height: 50
                 },
                 {
-                    component: 'Layout',
-                    position: {x: 0, y: 0},
-                    width: 250,
-                    height: 140,
-                    layout: [1, 4],
-                    children: [
-                        {
-                            id: 'radio1',
-                            text: 'choice 1',
-                            component: 'Radio',
-                            group: 1,
-                            position: 'center',
-                            width: 30,
-                            height: 30
-                        },
-                        {
-                            id: 'radio2',
-                            text: 'choice 2',
-                            component: 'Radio',
-                            group: 1,
-                            position: 'center',
-                            width: 30,
-                            height: 30
-                        },
-                        {
-                            id: 'radio3',
-                            text: 'choice 3',
-                            component: 'Radio',
-                            group: 1,
-                            position: 'center',
-                            width: 30,
-                            height: 30
-                        },
-                        {
-                            id: 'radio4',
-                            text: 'choice 4',
-                            component: 'Radio',
-                            group: 1,
-                            position: 'center',
-                            width: 30,
-                            height: 30
-                        }
-                    ]
+                    id: 'btn2',
+                    text: 'btn2',
+                    font: {
+                        size: '30px',
+                        family: 'Skranji',
+                        color: 'blue'
+                    },
+                    component: 'Button',
+                    position: 'center',
+                    width: 80,
+                    height: 50
+                },
+                {
+                    id: 'btn3',
+                    text: 'btn3',
+                    font: {
+                        size: '30px',
+                        family: 'Skranji',
+                        color: 'green'
+                    },
+                    component: 'Button',
+                    position: 'center',
+                    width: 80,
+                    height: 50
                 }
             ]
-        },
-        {
-            id: 'hlist1',
-            component: 'List',
-            padding: 3,
-            position: 'center',
-            width: 400,
-            height: 150,
-            layout: [4, null],
-            children: [
-                {component: 'Button', position: 'center', width: 90, height: 120},
-                null,
-                {component: 'Button', position: 'center', width: 90, height: 120},
-                {component: 'Button', position: 'center', width: 90, height: 120},
-                {component: 'Button', position: 'center', width: 90, height: 120},
-                {component: 'Button', position: 'center', width: 90, height: 120},
-                {component: 'Button', position: 'center', width: 90, height: 120},
-                {component: 'Button', position: 'center', width: 90, height: 120},
-                {component: 'Button', position: 'center', width: 90, height: 120},
-                {component: 'Button', position: 'center', width: 90, height: 120},
-                {component: 'Button', position: 'center', width: 90, height: 120},
-            ]
-        },
-        {
-            id: 'btn2',
-            component: 'Checkbox',
-            position: 'center',
-            text: 'Checkbox',
-            width: 30,
-            height: 30
         }
     ]
 };

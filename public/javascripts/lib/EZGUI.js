@@ -589,7 +589,7 @@ var EZGUI;
             }
 
             return GUIContainer;
-        })(PIXI.DisplayObjectContainer);
+        })(PIXI.Container);
         Compatibility.GUIContainer = GUIContainer;
         if (Compatibility.PIXIVersion == 3) {
             Compatibility['GUIContainer'] = PIXI['Container'];
@@ -1323,11 +1323,14 @@ var EZGUI;
                     //console.log('ezgui:mouseover', event);
                     _this.emit('ezgui:mouseover', event, _this);
                 }, this);
+
                 _this.phaserGroup.events.onInputOut.add(function (target, event) {
                     _this._over = false;
                     _this.emit('ezgui:mouseout', event, _this);
                     //console.log('ezgui:mouseout', event);
                 }, this);
+
+
                 _this.phaserGroup.events.onInputDown.add(function (target, event) {
                     if (!_this.canTrigger(event, _this)) {
                         return;

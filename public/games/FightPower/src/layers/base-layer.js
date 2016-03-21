@@ -1,11 +1,18 @@
 /**
  * Created by guolei on 16/3/14.
  */
-var renderer = require();
-const BaseLayer = function (renderer) {
+const RendererManager = require("../tools/renderer-manager");
+
+const BaseLayer = function (ui_json) {
     let that = {};
     that.node = new PIXI.Container();
+    that.render = RendererManager;
     let _lastTime = 0;
+    let renderer = RendererManager.renderer;
+
+    that.clickButton = function (name) {
+
+    };
 
     that.init = function () {
         _lastTime = new Date().getTime();

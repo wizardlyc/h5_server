@@ -1,0 +1,14 @@
+{
+  "assets": {
+    "tools/crypt/config/pet_level-config.json": {
+      "md5": "a9bdb25b7e53efce1953639b3823695a"
+    },
+    "tools/crypt/config/pet_actions-config.json": {
+      "md5": "c17dc63dd00d3d642f768d38ba3f760b"
+    },
+    "tools/crypt/config/pet_leves-config.json": {
+      "md5": "a2ebfd2a1e065c151e7805a6e50a0789"
+    }
+  },
+  "version": "0.0.20"
+}

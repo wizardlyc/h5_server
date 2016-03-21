@@ -1,0 +1,26 @@
+{
+  "feed": {
+    "exp": 30,
+    "spend_gold": 100,
+    "get_gold": 0,
+    "time": 60
+  },
+  "bathe": {
+    "exp": 30,
+    "spend_gold": 100,
+    "get_gold": 0,
+    "time": 60
+  },
+  "shopping": {
+    "exp": 20,
+    "spend_gold": 0,
+    "get_gold": 100,
+    "time": 120
+  },
+  "exercise": {
+    "exp": 20,
+    "spend_gold": 0,
+    "get_gold": 100,
+    "time": 120
+  }
+}

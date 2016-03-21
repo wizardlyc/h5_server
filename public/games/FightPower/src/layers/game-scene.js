@@ -3,7 +3,7 @@
  */
 const BaseLayer = require("./base-layer.js");
 //const image = require("../../assets/layers/img/bomb1.png");
-const Inherited = require("./../inherited");
+const Inherited = require("./../tools/inherited");
 const spine = require("pixi-spine");
 const uiJSON = require("./game-scene-json");
 
@@ -47,7 +47,7 @@ const GameScene = function (renderer) {
                 that.node.addChild(sprite);
                 tween.start();
             });
-        //spine
+        //animations
         PIXI.loader
             .add('cat_5', './assets/cat_5.json')
             .load(function (loader, resources) {
