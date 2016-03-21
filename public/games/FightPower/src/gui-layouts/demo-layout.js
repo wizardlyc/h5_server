@@ -20,46 +20,59 @@ const DemoLayer = {
             position: {x: 0, y: 0},
             width: Conf.Canvas.width - 8,
             height: 150,
-            layout: [3, 1],
+            layout: [4, 1],
             children: [
                 {
-                    id: 'btn1',
-                    text: 'btn1',
+                    id: 'feed',
+                    text: 'feed',
                     font: {
-                        size: '30px',
+                        size: '26px',
                         family: 'Skranji',
                         color: 'white'
                     },
                     component: 'Button',
                     //image:{ "default": "./assets/img/bomb1.png", "down": "./assets/img/bomb1-selected.png" },
                     position: 'center',
-                    width: 80,
+                    width: 110,
                     height: 50
                 },
                 {
-                    id: 'btn2',
-                    text: 'btn2',
+                    id: 'bathe',
+                    text: 'bathe',
                     font: {
-                        size: '30px',
+                        size: '26px',
                         family: 'Skranji',
                         color: 'blue'
                     },
                     component: 'Button',
                     position: 'center',
-                    width: 80,
+                    width: 110,
                     height: 50
                 },
                 {
-                    id: 'btn3',
-                    text: 'btn3',
+                    id: 'shop',
+                    text: 'shop',
                     font: {
-                        size: '30px',
+                        size: '26px',
                         family: 'Skranji',
                         color: 'green'
                     },
                     component: 'Button',
                     position: 'center',
-                    width: 80,
+                    width: 110,
+                    height: 50
+                },
+                {
+                    id: 'exercise',
+                    text: 'exercise',
+                    font: {
+                        size: '26px',
+                        family: 'Skranji',
+                        color: 'gray'
+                    },
+                    component: 'Button',
+                    position: 'center',
+                    width: 110,
                     height: 50
                 }
             ]
