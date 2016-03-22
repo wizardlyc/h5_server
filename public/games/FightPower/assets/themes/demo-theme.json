@@ -43,10 +43,17 @@
             "color": "white"
         }
     },
+    "Label_": {
+        "bgPadding": 0,
+        "bg": "",
+        "corner": " ",
+        "line": " "
+    },
     "Layout": {
-        "bg": { "default": "./images/bg.png", "down": "./images/bg-down.png" },
-        "corner": "./images/corner.png",
-        "line": "./images/line.png"
+        "bgPadding": 1,
+        "bg": "",
+        "corner": " ",
+        "line": " "
     },
     "Button": {
         "bg": { "default": "./images/btn-bg.png", "down": "./images/btn-bg-down.png" },

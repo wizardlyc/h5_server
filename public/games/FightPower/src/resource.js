@@ -2,8 +2,9 @@
  * Created by guolei on 16/3/21.
  */
 const res = {
-    "catSpine":"./assets/animations/cat_5.json",
-    "bomb":"./assets/img/bomb1.png"
+    "catSpine":"./assets/animations/skeleton.json",
+    "diamond_normal":"./assets/img/text_diamond_normal.png",
+    "diamond_select":"./assets/img/text_diamond_select.png"
 };
 let g_resources = [];
 for (let i in res) {

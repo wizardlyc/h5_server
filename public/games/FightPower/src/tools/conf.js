@@ -10,5 +10,9 @@ Conf.Canvas = {
     posY_center: Height * 0.5
 
 };
+Conf.ConfigType = {
+    PetActions:'./assets/json/pet_actions-config.json',
+    PetLevels:'./assets/json/pet_levels-config.json'
+};
 
 module.exports = Conf;
