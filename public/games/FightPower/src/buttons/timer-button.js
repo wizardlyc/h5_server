@@ -12,17 +12,12 @@ const TimerButton = function (button, time) {
         button.on('click', function (event, me) {
             if (_goCD)return;
             _goCD = true;
+            button.interactive = false;
             button.text = _cdTime;
             callFunc(event, me);
         });
     };
 
-    button.on('touchdown', function (event, me) {
-        if (!_goCD) {
-
-        }
-
-    });
 
     that.update = function (dt) {
         if (!_goCD)return;
@@ -35,6 +30,8 @@ const TimerButton = function (button, time) {
             } else {
                 button.text = _showText;
                 _goCD = false;
+                button.interactive = true;
+                _cdTime = time;
             }
             _fixedTime += 1.0;
         }

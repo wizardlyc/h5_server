@@ -46,12 +46,13 @@ const DemoLayer = {
                 }
             ]
         },
+        null,
         {
             component: 'Layout',
-            position: {x: 0, y: 50},
-            width: 170,
-            height: 300,
-            layout: [2, 3],
+            position: {x:50,y:150},
+            width: 400,
+            height: 100,
+            layout: [4, 1],
             children: [
                 {
                     id: 'attack',
@@ -111,7 +112,6 @@ const DemoLayer = {
 
             ]
         },
-        null,
         {
             component: 'Layout',
             position: {x: 0, y: 0},
