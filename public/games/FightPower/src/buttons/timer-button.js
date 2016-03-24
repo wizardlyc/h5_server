@@ -7,7 +7,7 @@ const TimerButton = function (button, time) {
     let _fixedTime = 1.0;
     let _goCD = false;
     let _showText = button.text;
-
+    button.buttonMode = true;
     that.click = function (callFunc) {
         button.on('click', function (event, me) {
             if (_goCD)return;

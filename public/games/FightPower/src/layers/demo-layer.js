@@ -11,6 +11,7 @@ const Data = require('../data/pet-data');
 const Tools = require('../tools/tools');
 const configManager = require('../tools/config-manager');
 const TimerButton = require('../buttons/timer-button');
+const RendererManager = require("../tools/renderer-manager");
 
 function DemoLayer() {
     const LayerJson = "./assets/themes/demo-theme.json";
@@ -59,6 +60,8 @@ function DemoLayer() {
             _exerciseTimerButton.click(ClickedOn);
 
             that.node.addChild(_layerGui);
+
+            //Utils.scaleToWindow(RendererManager.renderer,that.node);
             initAnimation();
             refreshLayerInfo();
             petActions();
@@ -103,16 +106,17 @@ function DemoLayer() {
 
 
     function moveActions() {
+        let actionTime = 1000;
         _tweenBgPos = {x: -192};
 
         _tweenLeft = new EZGUI.Tween(_tweenBgPos)
-            .to({x: 0}, 3000);
+            .to({x: 0}, actionTime);
 
         _tweenMid = new EZGUI.Tween(_tweenBgPos)
-            .to({x: -192}, 3000);
+            .to({x: -192}, actionTime);
 
         _tweenRight = new EZGUI.Tween(_tweenBgPos)
-            .to({x: -384}, 3000);
+            .to({x: -384}, actionTime);
 
     };
 
@@ -130,17 +134,18 @@ function DemoLayer() {
     }
 
     function petActions() {
+        let actionTime = 1000;
 
         _tweenPetPos = {y: Conf.Canvas.posY_center + 80, scale: 0.5};
 
         _tweenPetFront = new EZGUI.Tween(_tweenPetPos)
-            .to({y: Conf.Canvas.posY_center + 160, scale: 0.60}, 3000);
+            .to({y: Conf.Canvas.posY_center + 160, scale: 0.60}, actionTime);
 
         _tweenPetMid = new EZGUI.Tween(_tweenPetPos)
-            .to({y: Conf.Canvas.posY_center + 80, scale: 0.5}, 3000);
+            .to({y: Conf.Canvas.posY_center + 80, scale: 0.5}, actionTime);
 
         _tweenPetBack = new EZGUI.Tween(_tweenPetPos)
-            .to({y: Conf.Canvas.posY_center , scale: 0.4}, 3000);
+            .to({y: Conf.Canvas.posY_center , scale: 0.4}, actionTime);
     }
 
     function playPetMoveActions() {
@@ -168,14 +173,14 @@ function DemoLayer() {
     function onDragStart(event) {
         this.data = event.data;
         this.dragging = true;
-        _petAnimation.state.setAnimationByName(0, animations.bathe, true);
+        //_petAnimation.state.setAnimationByName(0, animations.bathe, true);
     }
 
     function onDragEnd() {
         this.dragging = false;
         this.data = null;
         playActions();
-        _petAnimation.state.setAnimationByName(0, animations.exercise, true);
+        //_petAnimation.state.setAnimationByName(0, animations.exercise, true);
 
     }
 

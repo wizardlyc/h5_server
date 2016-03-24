@@ -4056,8 +4056,8 @@ var EZGUI;
                 return false;
             if (!parent.worldTransform || !parent.guiMask)
                 return isMasked(x, y, parent);
-            var wratio = 1;
-            var hratio = 1;
+            var wratio = parent.scale;
+            var hratio =  parent.scale;
             if (EZGUI.Compatibility.isPhaser) {
                 wratio = Phaser.GAMES[0].scale.width / Phaser.GAMES[0].width;
                 hratio = Phaser.GAMES[0].scale.height / Phaser.GAMES[0].height;
