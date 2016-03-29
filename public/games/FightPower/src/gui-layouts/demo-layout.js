@@ -43,6 +43,19 @@ const DemoLayer = {
                     position: {x: -10, y: 0},
                     width: 100,
                     height: 50
+                },
+                {
+                    id: 'gold_num',
+                    text: '1111111',
+                    font: {
+                        size: '26px',
+                        family: 'Skranji',
+                        color: 'yellow'
+                    },
+                    component: 'Label',
+                    position: {x: -10, y: 0},
+                    width: 100,
+                    height: 50
                 }
             ]
         },

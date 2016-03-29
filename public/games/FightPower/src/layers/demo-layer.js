@@ -54,6 +54,7 @@ function DemoLayer() {
             _shopTimerButton = TimerButton(EZGUI.components.shopping, _actionData.shopping.time);
             _exerciseTimerButton = TimerButton(EZGUI.components.exercise, _actionData.exercise.time);
 
+
             _feedTimerButton.click(ClickedOn);
             _batheTimerButton.click(ClickedOn);
             _shopTimerButton.click(ClickedOn);
@@ -61,7 +62,6 @@ function DemoLayer() {
 
             that.node.addChild(_layerGui);
 
-            //Utils.scaleToWindow(RendererManager.renderer,that.node);
             initAnimation();
             refreshLayerInfo();
             petActions();
@@ -145,7 +145,7 @@ function DemoLayer() {
             .to({y: Conf.Canvas.posY_center + 80, scale: 0.5}, actionTime);
 
         _tweenPetBack = new EZGUI.Tween(_tweenPetPos)
-            .to({y: Conf.Canvas.posY_center , scale: 0.4}, actionTime);
+            .to({y: Conf.Canvas.posY_center, scale: 0.4}, actionTime);
     }
 
     function playPetMoveActions() {
@@ -220,7 +220,7 @@ function DemoLayer() {
         if (_gameBgLayer) {
             _gameBgLayer.position.x = _tweenBgPos.x;
         }
-        if(_petAnimation){
+        if (_petAnimation) {
             _petAnimation.position.y = _tweenPetPos.y;
             _petAnimation.scale.set(_tweenPetPos.scale);
         }

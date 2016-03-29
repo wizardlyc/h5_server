@@ -20,7 +20,8 @@ Utils.createSpine = function (g_res) {
     return new Spine(PIXI.loader.resources[g_res].spineData)
 };
 
-Utils.scaleToWindow = function (renderer,stage) {
+
+Utils.scaleToWindow = function (renderer, stage) {
     var scaleX = window.innerWidth / 480;
     var scaleY = window.innerHeight / 754;
     var scale = Math.min(scaleX, scaleY);

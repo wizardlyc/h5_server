@@ -4,7 +4,7 @@
 const RendererManager = require("../tools/renderer-manager");
 const Utils = require('../tools/utils');
 const Scale = require('../tools/scaleToWindow');
-const BaseLayer = function (ui_json) {
+const BaseLayer = function () {
     let that = {};
 
     var stats = new Stats();

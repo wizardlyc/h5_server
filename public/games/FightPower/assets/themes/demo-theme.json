@@ -35,7 +35,13 @@
             "color": "white"
         }
     },
-    "Label_": {
+    "Label": {
+        "bgPadding": 0,
+        "bg": "",
+        "corner": " ",
+        "line": " "
+    },
+    "Sprite": {
         "bgPadding": 0,
         "bg": "",
         "corner": " ",
@@ -60,9 +66,9 @@
         }
     },
     "List": {
-        "bg": "./images/darkcnt-line.png",
-        "corner": "./images/darkcnt-corner.png",
-        "line": "./images/darkcnt-line.png"
+        "bg": "",
+        "corner": "",
+        "line": ""
 
     },
     "hListItem": {
