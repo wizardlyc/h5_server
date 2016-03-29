@@ -15,17 +15,13 @@ const Scale = require('./tools/scaleToWindow');
         petData.init();
     });
 
-    ////
-    //window.addEventListener('resize',function(event){
-    //    let scale =  Scale(renderManager.renderer.view);
-    //    //renderManager.renderer.view.scale.x = scale;
-    //    //renderManager.renderer.view.scale.y = scale;
-    //});
     if (PIXI.loader) {
         PIXI.loader.add(Resources).load(function () {
-            let game = GameMainLayer();
+            let game = DemoLayer();
             game.init();
         });
     }
 
+
 })();
+

@@ -21,14 +21,14 @@ const GameMainLayer = function () {
             _layerGui = EZGUI.create(MainLayout, "demo");
             that.node.addChild(_layerGui);
             EZGUI.components.petInfoBar0skill.bindChildren('mousedown', function (event, me) {
-                console.log('petInfoBar0',me.guiID);
-
+                console.log('petInfoBar0', me.guiID);
+                that.updateEnable = true;
             });
             EZGUI.components.petInfoBar1skill.bindChildren('click', function (event, me) {
-                console.log('petInfoBar1',me.guiID);
+                console.log('petInfoBar1', me.guiID);
             });
             EZGUI.components.petInfoBar2skill.bindChildren('click', function (event, me) {
-                console.log('petInfoBar2',me.guiID);
+                console.log('petInfoBar2', me.guiID);
             });
         });
 

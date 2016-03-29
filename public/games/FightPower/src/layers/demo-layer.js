@@ -173,6 +173,7 @@ function DemoLayer() {
     function onDragStart(event) {
         this.data = event.data;
         this.dragging = true;
+        that.updateEnable = true;
         //_petAnimation.state.setAnimationByName(0, animations.bathe, true);
     }
 
@@ -224,8 +225,6 @@ function DemoLayer() {
             _petAnimation.position.y = _tweenPetPos.y;
             _petAnimation.scale.set(_tweenPetPos.scale);
         }
-
-
     });
 
     Tools.event.on('levelUp', refreshLayerInfo);
